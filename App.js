@@ -6,12 +6,13 @@ import {
   TouchableOpacity,
   Image,
   SafeAreaView,
+  Button,
 } from "react-native";
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <Text>Hello react Native</Text>
+      {/* <Text>Hello react Native</Text>
       <TouchableOpacity onPress={() => console.log("image tapped")}>
         <Image
           source={{
@@ -20,7 +21,12 @@ export default function App() {
             uri: "https://picsum.photos/200/300",
           }}
         />
-      </TouchableOpacity>
+      </TouchableOpacity> */}
+      <Button
+        color="orange"
+        title="Click Me"
+        onPress={() => console.log("btn tapped")}
+      />
     </SafeAreaView>
   );
 }
